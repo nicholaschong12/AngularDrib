@@ -1,0 +1,28 @@
+<div id="mainwrap">
+	
+	<div class="section group">
+		<div class="col span_3_of_3">
+		<div class="shot-head-img"><img ng-src="{{shot.player.avatar_url}}"/></div>
+		<div class="shot-head-desc">
+			<span><strong>{{shot.title}}</strong></span> <br />
+			<span>By <a href="{{shot.player.url}}">{{shot.player.name}}</a> {{shot.created_at | dDate:"d MMM yyyy"}}</span>
+		</div>
+		</div>
+	</div>	
+	<div class="section group>">
+		<div class="col span_3_of_5">
+			<div class="shot-main-img">
+				<img ng-src="{{shot.image_url}}" />
+			</div>
+			<div class="shot-main-desc" ng-bind-html="shot.description | sanitize">{{shot.description}}</div>
+		</div>
+		<div class="col span_1_of_5">
+			<ul class="shot-side-bar">
+				<li><span class="glyphicon glyphicon-heart"></span><span class="shot-side-inner">{{shot.likes_count}}</span>likes</li>
+				<li><span class="glyphicon glyphicon-share-alt"></span><span class="shot-side-inner">{{shot.rebounds_count}}</span>rebounds
+				<li><span class="glyphicon glyphicon-eye-open"></span><span class="shot-side-inner">{{shot.views_count}}</span>views</li>
+			</ul>
+		</div>
+		<div class="col span_1_of_5"></div>
+	</div>
+</div>

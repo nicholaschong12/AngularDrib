@@ -1,0 +1,46 @@
+#headerwrap
+{
+	width: 100%;
+	background:#323232;
+	
+}
+
+#header-inner
+{
+	max-width: 960px;
+	width: 100%;
+	margin:auto;
+		
+}
+
+#header-ul
+{
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+#header-ul li
+{
+
+	display:inline-block;
+	margin:0 5px;
+	padding:0;
+	list-style: none;
+	float:left;
+	
+}
+#header-ul li a
+{
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+height:50px;
+padding:0 10px;
+text-decoration: none;
+color:white;
+
+}
+#header-ul li a:hover
+{
+background:grey;
+}

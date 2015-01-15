@@ -1,0 +1,38 @@
+<div id="mainwrap">
+	
+	<div class="section group">
+	
+		<div class="col span_1_of_4 cssrel" ng-repeat="shot in list.shots">
+		<div class="blockdesc" ng-bind-html="shot.description | sanitize">
+					<p>{{shot.description}}</p>
+		</div>
+			<div class="blockwrap">
+				
+				<div class="blockimg">
+					<a href="#/shot/{{shot.id}}">
+					<img ng-src="{{shot.image_url}}" />
+					</a>
+				</div>
+				<div class="blockinfo">
+				<ul>
+					<li>{{shot.views_count}} <span class="glyphicon glyphicon-eye-open"></span></li>
+					<li>{{shot.likes_count}} <span class="glyphicon glyphicon-comment"></span></li>
+					<li>{{shot.comments_count}}<span class="glyphicon glyphicon-heart"></span></li>
+				</ul>
+				</div>
+				
+			</div>
+			<div class="blockauthor">
+				<a href="{{shot.player.url}}">
+					<img class="blockauthor-img" ng-src="{{shot.player.avatar_url}}" />
+					{{shot.player.name}}
+				</a>
+			</div>
+		</div>
+		
+		
+	</div>
+	<div class="btmbutton">
+			<button ng-click="loadmore()"><span class="glyphicon glyphicon-chevron-right"></span></button>
+		</div>
+</div>

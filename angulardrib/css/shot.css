@@ -1,0 +1,55 @@
+.shot-main-img img
+{
+width: 100%;
+
+}
+
+.shot-main-img
+{
+padding:10px;
+background:white;
+
+}
+.shot-head-img
+{
+display: inline-block;
+}
+.shot-head-img img
+{
+width: 60px;
+height:60px;
+border-radius:200px;
+
+}
+.shot-head-desc
+{
+display: inline-block;
+
+}
+
+.shot-side-bar
+{
+margin: 0;
+margin-left:30px;
+padding:0;
+
+}
+
+.shot-side-bar li
+{
+list-style: none;
+padding:10px 5px;
+border-bottom:1px solid black;
+}
+
+.shot-side-inner
+{
+padding:0 5px;
+
+}
+
+.shot-main-desc
+{
+
+	padding-top:20px;
+}
